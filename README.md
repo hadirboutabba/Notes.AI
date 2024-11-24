@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# notes.ai
-
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/hadirboutabba/notes.ai)
-=======
 # Notes.AI: NLP and Reinforcement Learning-Based Web App for Video Recommendations on Psychological Wellness
 
 Notes.AI is a web application designed to help users deal with their psychological struggles by recommending personalized video and podcast content. By leveraging **natural language processing (NLP)** and **reinforcement learning (RL)**, the system suggests relevant stories and experiences of individuals who have gone through similar challenges, promoting mental health awareness and providing a sense of connection and support.
@@ -12,7 +7,7 @@ The main functionality of the app involves:
  2. Reducing processed data dimensionality via an autoencoder
  3. Training a Q-learning agent to recommend video content.
 
-Key Features
+# Key Features
 ### 1. Data Preprocessing pipeline
   
  Cleanses text by removing unnecessary noise such as punctuation, numbers, and repetitive characters.
@@ -30,21 +25,19 @@ Key Features
     
 ### 4. User-Friendly Web Application utilizing our NLP\RL models
 
-...
+A user-friendly web app that allows users to input their psychological struggles and receive relevant content based on their needs.
 
 
-Project Architecture
+# Project Architecture
 
-    Text Preprocessing Pipeline
-    Prepares raw text for analysis through tokenization, cleaning, and stopword removal.
+ Text Preprocessing Pipeline
+ Prepares raw text for analysis through tokenization, cleaning, and stopword removal.
 
-    Dimensionality Reduction with Autoencoder
-    Reduces one-hot encoded text vectors into low-dimensional embeddings, balancing data efficiency and feature richness.
+ Dimensionality Reduction with Autoencoder
+ Reduces one-hot encoded text vectors into low-dimensional embeddings, balancing data efficiency and feature richness.
 
-    Reinforcement Learning for Recommendations
-    A Q-learning agent interacts with embeddings and learns an optimal recommendation strategy by maximizing reward signals based on user simulation.
-
-All inside a user-friendly web app ..
+ Reinforcement Learning for Recommendations
+ A Q-learning agent interacts with embeddings and learns an optimal recommendation strategy by maximizing reward signals based on user simulation, all inside a user-friendly web app.
 
 In-Depth Guide
 1. Text Preprocessing
@@ -62,16 +55,13 @@ In-Depth Guide
     An autoencoder neural network compresses the matrix into a low-dimensional representation while retaining semantic relevance.
     These embeddings serve as input states for the Q-learning agent.
 
-3. Reinforcement Learning
+## 3. Reinforcement Learning
+ **Agent Setup:**
+ The state space consists of embeddings representing video data. The action space includes combinations of video IDs that the agent can recommend.
+ **Training:**
+ The agent learns through simulated user interactions, guided by a reward mechanism: 
+  * Positive rewards for engaging recommendations (e.g., watched or completed videos).
+  * Penalties for irrelevant or unengaging recommendations.
+ **Output:**
+ A trained Q-learning agent capable of making intelligent video recommendations.
 
-    Agent Setup:
-        The state space consists of embeddings representing video data.
-        The action space includes combinations of video IDs that the agent can recommend.
-    Training:
-        The agent learns through simulated user interactions, guided by a reward mechanism:
-            Positive rewards for engaging recommendations (e.g., watched or completed videos).
-            Penalties for irrelevant or unengaging recommendations.
-    Output:
-        A trained Q-learning agent capable of making intelligent video recommendations.
-
->>>>>>> a36a77d7c22108988d5795f4827400bb7f8e5e95
