@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const loginSchema = z.object({
   email: z.string().email(),
@@ -12,6 +12,7 @@ const loginSchema = z.object({
 type LoginForm = z.infer<typeof loginSchema>;
 
 export function Login() {
+  const navigate = useNavigate(); // Use navigate hook for redirection
   const {
     register,
     handleSubmit,
@@ -22,7 +23,10 @@ export function Login() {
 
   const onSubmit = (data: LoginForm) => {
     console.log(data);
-    // TODO: Implement authentication
+    // TODO: Implement authentication logic here (e.g., API call)
+
+    // Simulate successful login and redirect to Dashboard
+    navigate('/dashboard'); // Redirect to dashboard page
   };
 
   return (
@@ -44,7 +48,9 @@ export function Login() {
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sky-soft focus:ring focus:ring-sky-soft focus:ring-opacity-50"
             />
             {errors.email && (
-              <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+              <p className="mt-1 text-sm text-red-600">
+                {errors.email.message}
+              </p>
             )}
           </div>
           <div>
