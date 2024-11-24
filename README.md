@@ -34,40 +34,33 @@ The main functionality of the app involves:
 A user-friendly web app that allows users to input their psychological struggles and receive relevant content based on their needs.
 
 
-# Project Architecture
+# In-Depth Guide
 
- Text Preprocessing Pipeline
- Prepares raw text for analysis through tokenization, cleaning, and stopword removal.
 
- Dimensionality Reduction with Autoencoder
- Reduces one-hot encoded text vectors into low-dimensional embeddings, balancing data efficiency and feature richness.
+## 1. Text Preprocessing
 
- Reinforcement Learning for Recommendations
- A Q-learning agent interacts with embeddings and learns an optimal recommendation strategy by maximizing reward signals based on user simulation, all inside a user-friendly web app.
+ Input: Raw text strings from the dataset.
+ Processing Steps:
+ Convert text to lowercase, remove punctuation and numbers.
+  1. Eliminate common stopwords and retain meaningful English words.
+  2. Tokenize text into individual words.
+ Output: A cleaned and tokenized version of the input text.
 
-In-Depth Guide
-1. Text Preprocessing
+## 2. Dimensionality Reduction
 
-    Input: Raw text strings from the dataset.
-    Processing Steps:
-        Convert text to lowercase, remove punctuation and numbers.
-        Eliminate common stopwords and retain meaningful English words.
-        Tokenize text into individual words.
-    Output: A cleaned and tokenized version of the input text.
-
-2. Dimensionality Reduction
-
-    The processed text is transformed into a one-hot encoded matrix using CountVectorizer.
-    An autoencoder neural network compresses the matrix into a low-dimensional representation while retaining semantic relevance.
-    These embeddings serve as input states for the Q-learning agent.
+ * The processed text is transformed into a one-hot encoded matrix using CountVectorizer.
+ * An autoencoder neural network compresses the matrix into a low-dimensional representation while retaining semantic relevance.
+ * These embeddings serve as input states for the Q-learning agent.
 
 ## 3. Reinforcement Learning
  **Agent Setup:**
  The state space consists of embeddings representing video data. The action space includes combinations of video IDs that the agent can recommend.
+ 
  **Training:**
  The agent learns through simulated user interactions, guided by a reward mechanism: 
   * Positive rewards for engaging recommendations (e.g., watched or completed videos).
   * Penalties for irrelevant or unengaging recommendations.
+
  **Output:**
  A trained Q-learning agent capable of making intelligent video recommendations.
 
