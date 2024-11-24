@@ -21,12 +21,10 @@ The main functionality of the app involves:
 ### 2. Autoencoder for Embedding Generation
  
  Compresses high-dimensional text vectorizations into concise, informative embeddings.
- Enables efficient downstream processing while preserving essential semantic features.
 
 ### 3. AI-Powered Video Recommendations
 
  Trains a Q-learning agent to optimize video selection by simulating user interactions.
- Uses a flexible reward mechanism to balance exploration and exploitation, driving adaptive learning.
     
 ### 4. User-Friendly Web Application utilizing our NLP\RL models
 
