@@ -6,7 +6,11 @@ The main functionality of the app involves:
  1. Processing textual data
  2. Reducing processed data dimensionality via an autoencoder
  3. Training a Q-learning agent to recommend video content.
+    
 
+<p align="center">
+  <img src="mindshift.drawio-4.pdf" alt="Project Logo" width="600" height="444"/>
+</p>
 # Key Features
 ### 1. Data Preprocessing pipeline
   
