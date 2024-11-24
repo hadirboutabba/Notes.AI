@@ -8,22 +8,22 @@ The main functionality of the app involves:
  3. Training a Q-learning agent to recommend video content.
 
 Key Features
-1. Data Preprocessing pipeline
-
-    Cleanses text by removing unnecessary noise such as punctuation, numbers, and repetitive characters.
-    Filters out irrelevant words using stopword removal and retains meaningful vocabulary from a curated English dictionary.
+### 1. Data Preprocessing pipeline
+  
+ Cleanses text by removing unnecessary noise such as punctuation, numbers, and repetitive characters.
+ Filters out irrelevant words using stopword removal and retains meaningful vocabulary from a curated English dictionary.
     
-    2. Autoencoder for Embedding Generation
+### 2. Autoencoder for Embedding Generation
+ 
+ Compresses high-dimensional text vectorizations into concise, informative embeddings.
+ Enables efficient downstream processing while preserving essential semantic features.
 
-    Compresses high-dimensional text vectorizations into concise, informative embeddings.
-    Enables efficient downstream processing while preserving essential semantic features.
+### 3. AI-Powered Video Recommendations
 
-3. AI-Powered Video Recommendations
-
-    Trains a Q-learning agent to optimize video selection by simulating user interactions.
-    Uses a flexible reward mechanism to balance exploration and exploitation, driving adaptive learning.
+ Trains a Q-learning agent to optimize video selection by simulating user interactions.
+ Uses a flexible reward mechanism to balance exploration and exploitation, driving adaptive learning.
     
-4. User-Friendly Web Application utilizing our NLP\RL models
+### 4. User-Friendly Web Application utilizing our NLP\RL models
 
 ...
 
