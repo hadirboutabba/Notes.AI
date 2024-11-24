@@ -16,8 +16,7 @@ The main functionality of the app involves:
 # Key Features
 ### 1. Data Preprocessing pipeline
   
- Cleanses text by removing unnecessary noise such as punctuation, numbers, and repetitive characters.
- Filters out irrelevant words using stopword removal and retains meaningful vocabulary from a curated English dictionary.
+ Cleanses text by removing unnecessary noise such as punctuation, numbers, irrelevant words, stopword and repetitive characters.
     
 ### 2. Autoencoder for Embedding Generation
  
