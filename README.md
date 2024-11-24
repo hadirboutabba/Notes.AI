@@ -48,13 +48,13 @@ A user-friendly web app that allows users to input their psychological struggles
 
 ## 2. Dimensionality Reduction
 
- * The processed text is transformed into a one-hot encoded matrix using CountVectorizer.
- * An autoencoder neural network compresses the matrix into a low-dimensional representation while retaining semantic relevance.
+ * The processed text is transformed into a one-hot encoded matrix.
+ * An autoencoder neural network compresses the matrix into a low-dimensional representation.
  * These embeddings serve as input states for the Q-learning agent.
 
 ## 3. Reinforcement Learning
  **Agent Setup:**
- The state space consists of embeddings representing video data. The action space includes combinations of video IDs that the agent can recommend.
+ The state space consists of text embeddings and video data. The action space includes combinations of video IDs that the agent can recommend.
  
  **Training:**
  The agent learns through simulated user interactions, guided by a reward mechanism: 
