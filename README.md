@@ -36,11 +36,14 @@ A user-friendly web app that allows users to input their psychological struggles
 
 ## 1. Text Preprocessing
 
- Input: Raw text strings from the dataset.
+ Input: Raw text strings.
+ 
  Processing Steps:
- Convert text to lowercase, remove punctuation and numbers.
-  1. Eliminate common stopwords and retain meaningful English words.
-  2. Tokenize text into individual words.
+ 
+  1. Convert text to lowercase, remove punctuation and numbers.
+  2. Eliminate common stopwords and retain meaningful English words.
+  3. Tokenize text into individual words.
+     
  Output: A cleaned and tokenized version of the input text.
 
 ## 2. Dimensionality Reduction
