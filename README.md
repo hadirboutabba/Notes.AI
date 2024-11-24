@@ -7,9 +7,10 @@ The main functionality of the app involves:
  2. Reducing processed data dimensionality via an autoencoder
  3. Training a Q-learning agent to recommend video content.
 
-<div style="text-align: center;">
+<p style="text-align: center;">
   <img src="mindshift.jpg" alt="Project Logo" width="600" height="444"/>
-</div>
+</p>
+
 
 
 # Key Features
