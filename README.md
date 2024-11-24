@@ -9,7 +9,7 @@ The main functionality of the app involves:
     
 
 <p align="center">
-  <img src="mindshift.drawio-4.pdf" alt="Project Logo" width="600" height="444"/>
+  <img src="mindshift.png" alt="Project Logo" width="600" height="444"/>
 </p>
 # Key Features
 ### 1. Data Preprocessing pipeline
