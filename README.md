@@ -8,7 +8,7 @@ The main functionality of the app involves:
  3. Training a Q-learning agent to recommend video content.
 
 <div style="text-align: center;">
-  <img src="mindshift.png" alt="Project Logo" width="600" height="444"/>
+  <img src="mindshift.jpg" alt="Project Logo" width="600" height="444"/>
 </div>
 
 
