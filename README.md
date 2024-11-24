@@ -8,9 +8,10 @@ The main functionality of the app involves:
  3. Training a Q-learning agent to recommend video content.
     
 
-<p align="center">
-  <img src="mindshift.png" alt="Project Logo" width="600" height="444"/>
+<p style="text-align: center;">
+  <iframe src="mindshift.pdf" width="600" height="444"></iframe>
 </p>
+
 # Key Features
 ### 1. Data Preprocessing pipeline
   
