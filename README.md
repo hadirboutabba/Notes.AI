@@ -20,9 +20,9 @@ The main functionality of the app involves:
     
 ### 2. Autoencoder for Embedding Generation
  
- Compresses high-dimensional text vectorizations into concise, informative embeddings.
+ Compresses high-dimensional text vectorizations (OneHot) into concise, informative embeddings.
 
-### 3. AI-Powered Video Recommendations
+### 3. Reinforcement Learning-based Video Recommendations
 
  Trains a Q-learning agent to optimize video selection by simulating user interactions.
     
